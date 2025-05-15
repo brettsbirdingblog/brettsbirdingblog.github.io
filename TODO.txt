@@ -1,0 +1,5 @@
+1. sketch rough page design
+2. update HTML and CSS for:
+    a. Main page
+    b. Entry pages
+3. make custom theme for spring
