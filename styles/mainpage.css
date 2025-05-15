@@ -1,3 +1,4 @@
+/*title section*/
 .title-bar {
     background-color: #2d3e50;
     color: white;
@@ -16,10 +17,7 @@
     margin-bottom: 15px;
 }
 
-/* Blog content preview area (right side) */
-.blog-preview {
-    flex: 3;
-}
+/*nav bar*/
 body {
     display: flex;
     flex-direction: column;
@@ -42,20 +40,57 @@ nav a:hover {
     background-color: #575757;
     border-radius: 4px;
 }
-.container {
-    display: flex;
-    margin: 20px;
-}
+
+/*bio*/
 .bio {
-    width: 25%;
-    padding: 10px;
-    border-right: 1px solid #ccc;
+    flex: 1;
+    max-width: 250px;
+    background-color: orange;  /* Light gray background */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);  /* Optional: subtle shadow instead of border */
 }
-.bio img {
-    max-width: 100%;
-    border-radius: 50%;
+.bio-photo {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
-.content {
-    width: 75%;
-    padding: 10px;
+
+/*social links*/
+.social-links {
+    background-color: white; /* light blue background, change as desired */
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+.social-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.social-links li {
+    margin: 10px 0;
+    text-align: left;
+}
+.social-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.2s ease;
+}
+.social-links a i {
+    font-size: 1.3em;
+    color: #555;
+    width: 25px;
+    text-align: center;
+}
+.social-links a:hover {
+    color: #1a73e8;
+}
+.social-links a .fa-instagram { color: #e4405f; }
+.social-links a .fa-github { color: #333; }
+
