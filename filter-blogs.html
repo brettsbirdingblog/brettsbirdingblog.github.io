@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Brett's Birding Blog</title>
+        <link rel="stylesheet" href="styles/header-nav.css"/>
+        <link rel="stylesheet" href="styles/filter-blogs.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    </head>
+    <body>
+        <header class="title-bar">
+            <h1>Brett's Birding Blog</h1>
+        </header>
+
+        <nav class="top-nav">
+            <a href="index.html">Home</a>
+            <a href="Blogs By Year/2025/May/WED_14/WED_14.html">Newest Blog!</a>
+            <a href="filter-blogs.html">All Blogs</a>
+        </nav>
+        <h2>Filter Posts</h2>
+        <div id="filters">
+            <input type="text" id="filterYear" placeholder="Filter by year" />
+            <input type="date" id="filterDate" />
+            <select id="filterTopic">
+                <option value="">All topics</option>
+                <option value="birding">Birding</option>
+                <option value="photography">Photography</option>
+                <!-- add all your topics here -->
+            </select>
+            <select id="sortOrder">
+                <option value="date-desc">Sort: Newest First</option>
+                <option value="date-asc">Sort: Oldest First</option>
+                <option value="title-asc">Sort: Title A-Z</option>
+                <option value="title-desc">Sort: Title Z-A</option>
+            </select>
+        </div>
+        <ul id="resultsList"></ul>
+
+    <script src="JS Scripts/blog-filter.js"></script>
+
+    </body>
+</html>

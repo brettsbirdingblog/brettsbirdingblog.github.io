@@ -1,11 +1,11 @@
 /*bio*/
 .bio {
     flex: 1;
+    background-color: #1a73e8;
     max-width: 250px;
-    background-color: orange;  /* Light gray background */
+    border-radius: 8px;
     padding: 20px;
     text-align: center;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);  /* Optional: subtle shadow instead of border */
 }
 .bio-photo {
     width: 100%;
@@ -51,23 +51,82 @@
 .social-links a .fa-instagram { color: #e4405f; }
 .social-links a .fa-github { color: #333; }
 
-/*about me*/
-.about-me {
-    flex: 3;
-    padding: 20px;
+/*about me / contact form*/
+.about-and-contact {
+    overflow-y: auto; /* scroll vertically if too tall */
+    max-height: 90vh; /* optional max height relative to viewport */
+    max-width: 1000px;
+    margin: 40x auto;
+    padding: 30px;
     background-color: #ffffff;
-    color: #333;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.about-me {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
 }
 
 .about-me h2 {
     font-size: 1.8em;
     margin-bottom: 10px;
     color: #2d3e50;
+    text-align: center; /* Add this */
 }
+
 
 .about-me p {
     font-size: 1.05em;
     line-height: 1.6;
     margin-bottom: 15px;
+    text-align: justify;
+    hyphens: auto;
 }
 
+.contact-form {
+    margin-top: 30px;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2d3e50;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: #444;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    padding: 12px;
+    background-color: #2d3e50;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #3f5d77;
+}

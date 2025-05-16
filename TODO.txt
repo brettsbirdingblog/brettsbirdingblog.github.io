@@ -3,3 +3,6 @@
     a. Main page
     b. Entry pages
 3. make custom theme for spring
+4. write new-entry to-do/checklist so I make sure to update all necessary pages and code
+5. add send me a message (to business email) but force a solved puzzle first 
+   before email is revealed or before can send message so no bots 

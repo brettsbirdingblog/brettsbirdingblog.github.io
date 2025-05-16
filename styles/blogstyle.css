@@ -23,9 +23,11 @@
 }
 
 /* Paragraphs */
-.container p {
+.about-me p {
     font-size: 1.05em;
-    margin-bottom: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify; /* 👈 makes the paragraph edges align neatly */
 }
 
 /* Images */

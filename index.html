@@ -16,7 +16,7 @@
     <nav class="top-nav">
         <a href="index.html">Home</a>
         <a href="Blogs By Year/2025/May/WED_14/WED_14.html">Newest Blog!</a>
-        <a href="search-blogs.html">All Blogs</a>
+        <a href="filter-blogs.html">All Blogs</a>
     </nav>
 
     <div class="main-content">
@@ -24,7 +24,7 @@
             <img src="Site Assets/bio_photo.jpg" alt="Photo of Brett" class="bio-photo">
     
             <div class="social-links">
-                <h2>Connect with me:</h2>
+                <h2>Follow Me!</h2>
                 <ul>
                     <ul class="social-icon-list">
                         <li><a href="https://www.instagram.com/bretttakus" target="_blank"><i class="fab fa-instagram"></i> Personal</a></li>
@@ -35,13 +35,54 @@
                 </ul>
             </div>
         </aside>
-    
-        <section class="about-me">
-            <h2>About Me</h2>
-            <p>
-                bio
-            </p>
+        <section class="about-and-contact">
+            <div class="about-me">
+                <h2>About Me</h2>
+                <p>
+                    Hello!
+                </p>
+                <p>
+                    My name is Brett Morrison. I’m 23 and a student of computer science at Western 
+                    Washington University in Bellingham, WA. I originally was studying at the University 
+                    of British Columbia in Vancouver, BC but transferred after my 3rd (ish) year.
+                </p>
+                <p>
+                    I grew up in Hood River, OR and love lots of outdoor activities. Mostly 
+                    mountain scrambling right now, but mountain biking, skiing, and 
+                    windsurfing/foiling are all also favorites of mine.
+                </p>
+                <p>
+                    I enjoy a lot of different things at different times, and this is a fun 
+                    way for me to keep track of those ventures… The creation of this site was 
+                    a venture of its own! There is room for this to grow as I grow, so don’t
+                     get too attached to anything on here. I look forward to updating this 
+                     and adding fun new features as time goes on.
+                </p>
+                <p>
+                    I hope you enjoy, learn something from, or are inspired by my creative 
+                    expression, have a wonderful day!
+                </p>
+            </div>
+        
+            <div class="contact-form">
+                <h2>Send Me a Message</h2>
+                <form action="https://formsubmit.co/brettsbirdingblog@gmail.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required>
+        
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+        
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="5" required></textarea>
+        
+                    <button type="submit">Send</button>
+                </form>
+            </div>
         </section>
+       
         
     </div>
 </body>

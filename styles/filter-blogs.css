@@ -1,0 +1,99 @@
+/* === Define shared width for filter bar + results === */
+:root {
+    --content-width: 800px;
+}
+
+/* === Base === */
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* === Page Heading === */
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.6rem;
+    color: #2d3e50;
+}
+
+/* === Filter Controls === */
+#filters {
+    width: var(--content-width);
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+}
+
+#filters input,
+#filters select {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    min-width: 160px;
+    max-width: 200px;
+    flex: 1 1 auto;
+}
+
+/* === Results List === */
+#resultsList {
+    width: var(--content-width);
+    height: 400px;
+    overflow-y: auto;
+    margin: 30px auto;
+    padding: 20px 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+/* === Result Items === */
+#resultsList li {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#resultsList li a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#resultsList li a:hover {
+    text-decoration: underline;
+}
+
+.blog-meta {
+    font-size: 0.9rem;
+    color: #666;
+    white-space: nowrap;
+}
+
+/* === Responsive === */
+@media (max-width: 850px) {
+    :root {
+        --content-width: 90%;
+    }
+
+    #filters input,
+    #filters select {
+        width: 100%;
+        max-width: none;
+    }
+}
