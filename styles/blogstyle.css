@@ -1,41 +1,75 @@
 /* Content Container */
-.container {
-    max-width: 750px;
+.blog-entry {
+    overflow-y: auto;
+    max-height: 90vh;
+    max-width: 1000px;
     margin: 40px auto;
-    padding: 0 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
-
-/* Headings */
-.container h1 {
-    font-size: 2em;
-    margin-bottom: 0.2em;
+.blog-entry h1,
+.blog-entry h2 {
+    text-align: center;
+    color: #2d3e50;
+    margin-bottom: 10px;
 }
-
-.container h2 {
-    font-size: 1em;
-    font-weight: normal;
-    color: #666;
-    margin-top: 0;
-    margin-bottom: 1em;
-}
-
-/* Paragraphs */
-.about-me p {
+.blog-entry p {
     font-size: 1.05em;
     line-height: 1.6;
     margin-bottom: 15px;
-    text-align: justify; /* 👈 makes the paragraph edges align neatly */
+    text-align: justify;
+    hyphens: auto;
 }
 
 /* Images */
-.container img {
-    width: 100%;
+.blog-entry img {
+    display: block; /* makes margin auto work */
+    margin: 20px auto; /* vertical: 20px, horizontal: auto */
+    width: 60%;
     max-width: 100%;
     height: auto;
-    margin: 20px 0;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
+/*videos*/
+.video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.video-wrapper {
+    width: 320px; /* fixed width */
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.video-wrapper h2 {
+    font-size: 1rem;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    height: 180px; /* 16:9 ratio for 320px width */
+    border: none;
+    border-radius: 8px;
+}
+
+/*spotify embedded player*/
+.spotify-embed {
+    max-width: 600px;
+    margin: 30px auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius: 8;
+    overflow: hidden;
+}
+
+

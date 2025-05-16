@@ -6,3 +6,8 @@
 4. write new-entry to-do/checklist so I make sure to update all necessary pages and code
 5. add send me a message (to business email) but force a solved puzzle first 
    before email is revealed or before can send message so no bots 
+6. code cleanup -> rename, comment. organize
+!!!!
+7. make a concise entry input form so that the updating vars process is easy
+   (like global: "newest entry file")
+8. streamline img importing process heic -> jpg

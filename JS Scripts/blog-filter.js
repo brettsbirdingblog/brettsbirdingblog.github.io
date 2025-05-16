@@ -37,8 +37,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             meta.className = 'blog-meta';
             meta.textContent = `${blog.date} at ${blog.time}`;
 
-            li.appendChild(a);
             li.appendChild(meta);
+            li.appendChild(a);
             resultsList.appendChild(li);
         });
     }
