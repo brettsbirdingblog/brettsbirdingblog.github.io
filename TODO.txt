@@ -11,3 +11,8 @@
 7. make a concise entry input form so that the updating vars process is easy
    (like global: "newest entry file")
 8. streamline img importing process heic -> jpg
+9. organize and colorize UI
+10. add art portfolio/sticker stuff
+11. histogram of blog topics on main page
+12. post about new website on main
+13. bezier curve video, part 3 video, and site video
